@@ -163,28 +163,28 @@ void Services::Redo() {
 void Services::mockData() {
 
 	Vector<Product> prod;
-	
-	prod.EmplaceBack("Chicken Breast", "meat", 3, 20221220);
-	prod.EmplaceBack("Salmon Fillet", "meat", 5, 20231115);
-	prod.EmplaceBack("Milk", "dairy", 2, 20240210);
-	prod.EmplaceBack("Cheese", "dairy", 4, 20240525);
-	prod.EmplaceBack("Apple", "fruit", 1, 20240712);
-	prod.EmplaceBack("Banana", "fruit", 2, 20240330);
-	prod.EmplaceBack("Chocolate Cake", "sweets", 6, 20240105);
-	prod.EmplaceBack("Gummy Bears", "sweets", 2, 20241018);
-	prod.EmplaceBack("Beef Steak", "meat", 7, 20231222);
-	prod.EmplaceBack("Yogurt", "dairy", 1, 20240605);
-	prod.EmplaceBack("Orange", "fruit", 3, 20241120);
-	prod.EmplaceBack("Strawberries", "fruit", 4, 20240514);
-	prod.EmplaceBack("Ice Cream", "sweets", 5, 20240901);
-	prod.EmplaceBack("Pork Chop", "meat", 6, 20240228);
-	prod.EmplaceBack("Butter", "dairy", 3, 20240809);
-	prod.EmplaceBack("Grapes", "fruit", 2, 20241225);
-	prod.EmplaceBack("Muffin", "sweets", 3, 20240322);
-	prod.EmplaceBack("Lamb", "meat", 8, 20240417);
-	prod.EmplaceBack("Cottage Cheese", "dairy", 2, 20240630);
-	prod.EmplaceBack("Blueberries", "fruit", 5, 20240915);
+	prod.PushBack(Product("Chicken Breast", "meat", 3, 20221220));
+	prod.PushBack(Product("Salmon Fillet", "meat", 5, 20231115));
+	prod.PushBack(Product("Milk", "dairy", 2, 20240210));
+	prod.PushBack(Product("Cheese", "dairy", 4, 20240525));
+	prod.PushBack(Product("Apple", "fruit", 1, 20240712));
+	prod.PushBack(Product("Banana", "fruit", 2, 20240330));
+	prod.PushBack(Product("Chocolate Cake", "sweets", 6, 20240105));
+	prod.PushBack(Product("Gummy Bears", "sweets", 2, 20241018));
+	prod.PushBack(Product("Beef Steak", "meat", 7, 20231222));
+	prod.PushBack(Product("Yogurt", "dairy", 1, 20240605));
+	prod.PushBack(Product("Orange", "fruit", 3, 20241120));
+	prod.PushBack(Product("Strawberries", "fruit", 4, 20240514));
+	prod.PushBack(Product("Ice Cream", "sweets", 5, 20240901));
+	prod.PushBack(Product("Pork Chop", "meat", 6, 20240228));
+	prod.PushBack(Product("Butter", "dairy", 3, 20240809));
+	prod.PushBack(Product("Grapes", "fruit", 2, 20241225));
+	prod.PushBack(Product("Muffin", "sweets", 3, 20240322));
+	prod.PushBack(Product("Lamb", "meat", 8, 20240417));
+	prod.PushBack(Product("Cottage Cheese", "dairy", 2, 20240630));
+	prod.PushBack(Product("Blueberries", "fruit", 5, 20240915));
 
+	// Add products to repo
 	for (auto& it : prod) {
 		repo.addProduct(it);
 	}
