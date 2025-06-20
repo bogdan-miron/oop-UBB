@@ -1,0 +1,3 @@
+task1 open 1
+task2 closed 2
+task3 inProgress 3

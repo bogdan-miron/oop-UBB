@@ -1,0 +1,6 @@
+Bogdan 1
+Marius 2
+Cosmin 3
+Patricia 4
+Robert 5
+Aura 6
